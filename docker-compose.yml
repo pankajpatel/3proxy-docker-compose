@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+    socks5:
+        image: tarampampam/3proxy
+        container_name: 3proxy
+        restart: always
+        ports:
+            - 1080:1080
+            - 3128:3128
+        environment:
+            - PROXY_PASSWORD:myS3cr3tPr0xyP@ssw0rD
+            - PROXY_USER:3proxyUser
