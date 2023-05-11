@@ -1,5 +1,5 @@
 [phases.build]
-cmds = ["docker-compose build"]
+cmds = ["echo building"]
 
 [start]
 cmd = "docker-compose up -d"
