@@ -1,0 +1,6 @@
+[phases.build]
+cmds = ["docker-compose build"]
+
+[start]
+cmd = "docker-compose up -d"
+dependsOn = ["build"]
